@@ -12,7 +12,7 @@ public class PastaBar {
 	
 		String [] numbersVip= {"0631111111", "063222222","063333333","064444444","065555555","066666666"};
 				
-System.out.println(	findIng(ing,"Parmezan"));
+  
 		
 
 	}
@@ -26,4 +26,13 @@ System.out.println(	findIng(ing,"Parmezan"));
 		}return index;
 	}
 	
+	
+	public static boolean findVip(String [] numbersVip, String number) {
+		boolean vip=false;
+		for (int i =0;i<numbersVip.length;i++) {
+			if (number.equals(numbersVip[i])) {
+				 vip=true;
+			}
+		}return vip;
+	}
 }
